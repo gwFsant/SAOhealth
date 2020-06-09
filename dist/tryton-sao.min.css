@@ -1,0 +1,782 @@
+/*
+ * Input icons
+ */
+.input-icon {
+  position: relative;
+}
+.input-icon .icon-input {
+  position: absolute;
+  top: 0;
+  z-index: 4;
+  display: block;
+  width: 34px;
+  height: 34px;
+  line-height: 34px;
+  text-align: center;
+}
+[dir="ltr"] .input-icon .icon-primary {
+  left: 0px;
+}
+[dir="rtl"] .input-icon .icon-primary {
+  right: 0px;
+}
+[dir="ltr"] .input-icon .icon-secondary {
+  right: 0px;
+}
+[dir="rtl"] .input-icon .icon-secondary {
+  left: 0px;
+}
+.input-lg .icon-input,
+.input-group-lg .icon-input {
+  width: 46px;
+  height: 46px;
+  line-height: 46px;
+}
+.input-sm .icon-input,
+.input-group-sm .icon-input {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+}
+[dir="ltr"] .input-icon-primary > .form-control {
+  padding-left: 34px;
+}
+[dir="ltr"] .input-lg.input-icon-primary > .form-control,
+[dir="ltr"] .input-group-lg.input-icon-primary > .form-control {
+  padding-left: 46px;
+}
+[dir="ltr"] .input-sm.input-icon-primary > .form-control,
+[dir="ltr"] .input-group-sm.input-icon-primary > .form-control {
+  padding-left: 30px;
+}
+[dir="rtl"] .input-icon-primary > .form-control {
+  padding-right: 34px;
+}
+[dir="rtl"] .input-lg.input-icon-primary > .form-control,
+[dir="rtl"] .input-group-lg.input-icon-primary > .form-control {
+  padding-right: 46px;
+}
+[dir="rtl"] .input-sm.input-icon-primary > .form-control,
+[dir="rtl"] .input-group-sm.input-icon-primary > .form-control {
+  padding-right: 30px;
+}
+[dir="ltr"] .input-icon-secondary > .form-control {
+  padding-right: 34px;
+}
+[dir="ltr"] .input-lg.input-icon-secondary > .form-control,
+[dir="ltr"] .input-group-lg.input-icon-secondary > .form-control {
+  padding-right: 46px;
+}
+[dir="ltr"] .input-sm.input-icon-secondary > .form-control,
+[dir="ltr"] .input-group-sm.input-icon-secondary > .form-control {
+  padding-right: 30px;
+}
+[dir="rtl"] .input-icon-secondary > .form-control {
+  padding-left: 34px;
+}
+[dir="rtl"] .input-lg.input-icon-secondary > .form-control,
+[dir="rtl"] .input-group-lg.input-icon-secondary > .form-control {
+  padding-left: 46px;
+}
+[dir="rtl"] .input-sm.input-icon-secondary > .form-control,
+[dir="rtl"] .input-group-sm.input-icon-secondary > .form-control {
+  padding-left: 30px;
+}
+
+/*
+ * Off Canvas
+ * --------------------------------------------------
+ */
+body {
+  overflow-x: hidden;
+}
+.row-offcanvas {
+  position: relative;
+  -webkit-transition: all 0.25s ease-out;
+  -o-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
+}
+.row-offcanvas-right {
+  right: 0;
+}
+.row-offcanvas-left {
+  left: 0;
+}
+.row-offcanvas:not(.active) .main-offcanvas {
+  width: 100%;
+}
+.sidebar-offcanvas {
+  position: absolute !important;
+  top: 0;
+}
+@media (min-width: 1200px) {
+  .row-offcanvas-right .sidebar-offcanvas {
+    right: -16.6666%;
+  }
+  .row-offcanvas-left .sidebar-offcanvas {
+    left: -16.6666%;
+  }
+  .row-offcanvas-right.active {
+    right: 16.6666%;
+  }
+  .row-offcanvas-left.active {
+    left: 16.6666%;
+  }
+  .sidebar-offcanvas {
+    width: 16.6666%;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .row-offcanvas-right .sidebar-offcanvas {
+    right: -25%;
+  }
+  .row-offcanvas-left .sidebar-offcanvas {
+    left: -25%;
+  }
+  .row-offcanvas-right.active {
+    right: 25%;
+  }
+  .row-offcanvas-left.active {
+    left: 25%;
+  }
+  .sidebar-offcanvas {
+    width: 25%;
+  }
+}
+@media (min-width: 480px) and (max-width: 991px) {
+  .row-offcanvas-right .sidebar-offcanvas {
+    right: -50%;
+  }
+  .row-offcanvas-left .sidebar-offcanvas {
+    left: -50%;
+  }
+  .row-offcanvas-right.active {
+    right: 50%;
+  }
+  .row-offcanvas-left.active {
+    left: 50%;
+  }
+  .sidebar-offcanvas {
+    width: 50%;
+  }
+}
+@media (max-width: 479px) {
+  .row-offcanvas-right .sidebar-offcanvas {
+    right: -100%;
+  }
+  .row-offcanvas-left .sidebar-offcanvas {
+    left: -100%;
+  }
+  .row-offcanvas-right.active {
+    right: 100%;
+  }
+  .row-offcanvas-left.active {
+    left: 100%;
+  }
+  .sidebar-offcanvas {
+    width: 100%;
+  }
+}
+
+#tablist > li > a {
+  border: 0;
+}
+#tablist > li > a > span {
+  max-width: 9em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  /* For IE */
+  display: block;
+  margin-right: 15px;
+}
+[dir="rtl"] #tablist > li > a > span {
+  margin-right: 0;
+  margin-left: 15px;
+}
+#menu,
+#tabs {
+  padding-top: 5px;
+}
+#menu {
+  border-width: 1px;
+  border-style: solid;
+  border-top: none;
+}
+[dir="rtl"] #menu {
+  border-right: none;
+}
+@media screen and (max-width: 991px) {
+  #menu {
+    border-right: none;
+    border-left: none;
+    border-width: none;
+  }
+  .active #menu {
+    border-width: 1px;
+  }
+  [dir="rtl"] .active #menu {
+    border-right: none;
+  }
+}
+#user-preferences > a {
+  max-width: 20em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.tab-form nav.toolbar.affix,
+.tab-board nav.toolbar.affix {
+  top: 51px;
+  z-index: 999;
+}
+.tab-form .navbar-text .badge,
+.tab-board .navbar-text .badge {
+  max-width: 5em;
+  min-width: 5em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.tab-form .navbar-btn .badge,
+.tab-board .navbar-btn .badge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  z-index: 1000;
+}
+.tab-form .tab-domain .badge,
+.tab-board .tab-domain .badge {
+  min-width: 3em;
+}
+@media screen and (max-width: 767px) {
+  .tab-form .navbar-header > ul > li,
+  .tab-board .navbar-header > ul > li {
+    float: left;
+    width: 50%;
+  }
+}
+.modal-body {
+  overflow-x: auto;
+}
+.modal-lg .modal-content {
+  height: auto;
+  border-radius: 0;
+}
+@media screen and (min-width: 768px) {
+  .modal-dialog.modal-lg {
+    width: auto;
+    margin: 30px;
+  }
+}
+input[type='color'] .btn {
+  height: 1.42857143;
+}
+input[type='color'] .btn-lg {
+  height: 1.3333333;
+}
+input[type='color'] .btn-sm {
+  height: 1.5;
+}
+input[type='color'] .btn-xs {
+  height: 1.5;
+}
+.input-file > input[type='file'] {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+li.input-file > input[type='file'] {
+  top: auto;
+  height: auto;
+}
+/* Hide empty image displayed as broken image */
+img[src=''],
+img:not([src]) {
+  visibility: hidden;
+}
+img.icon {
+  height: 1.42857143em;
+}
+[dir="rtl"] img.icon {
+  transform: scaleX(-1);
+}
+.filter-box {
+  margin: 5px 5px;
+}
+.treeview {
+  overflow-x: auto;
+}
+.treeview > table.tree {
+  width: 100%;
+  table-layout: fixed;
+}
+.treeview > table.tree col.selection-state,
+.treeview > table.tree col.favorite {
+  width: 30px;
+}
+.treeview > table.tree th.selection-state > input,
+.treeview > table.tree td.selection-state > input {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+.treeview > table.tree > thead > tr > th {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+}
+.treeview > table.tree > thead > tr > th > label.sortable {
+  cursor: pointer;
+}
+.treeview > table.tree > thead > tr > th.char,
+.treeview > table.tree > thead > tr > th.text,
+.treeview > table.tree > thead > tr > th.many2one,
+.treeview > table.tree > thead > tr > th.one2one,
+.treeview > table.tree > thead > tr > th.date,
+.treeview > table.tree > thead > tr > th.time,
+.treeview > table.tree > thead > tr > th.selection,
+.treeview > table.tree > thead > tr > th.reference,
+.treeview > table.tree > thead > tr > th.url,
+.treeview > table.tree > thead > tr > th.email,
+.treeview > table.tree > thead > tr > th.callto,
+.treeview > table.tree > thead > tr > th.sip {
+  text-align: left;
+  text-align: start;
+}
+.treeview > table.tree > thead > tr > th.timedelta,
+.treeview > table.tree > thead > tr > th.float,
+.treeview > table.tree > thead > tr > th.numeric,
+.treeview > table.tree > thead > tr > th.integer,
+.treeview > table.tree > thead > tr > th.biginteger {
+  text-align: right;
+  text-align: end;
+}
+.treeview > table.tree > tbody > tr > td {
+  cursor: pointer;
+}
+.treeview > table.tree > tbody > tr > td > * {
+  vertical-align: middle;
+}
+.treeview > table.tree td.prefix {
+  padding-right: 8px;
+}
+[dir="rtl"] .treeview > table.tree td.prefix {
+  padding-right: 0;
+  padding-left: 8px;
+}
+.treeview > table.tree td.suffix {
+  padding-left: 8px;
+}
+[dir="rtl"] .treeview > table.tree td.suffix {
+  padding-left: 0;
+  padding-right: 8px;
+}
+.treeview > table.tree img.column-affix,
+.treeview > table.tree a.column-affix > img {
+  width: 1.42857143em;
+  height: 1.42857143em;
+  display: block;
+}
+.treeview > table.tree tr.more-row {
+  text-align: center;
+}
+.treeview .editabletree-char,
+.treeview .editabletree-date,
+.treeview .editabletree-datetime,
+.treeview .editabletree-integer,
+.treeview .editabletree-float,
+.treeview .editabletree-selection,
+.treeview .editabletree-timedelta,
+.treeview .editabletree-boolean,
+.treeview .editabletree-many2one,
+.treeview .editabletree-one2many {
+  width: 100%;
+}
+.treeview .editabletree-char input[type='checkbox'],
+.treeview .editabletree-date input[type='checkbox'],
+.treeview .editabletree-datetime input[type='checkbox'],
+.treeview .editabletree-integer input[type='checkbox'],
+.treeview .editabletree-float input[type='checkbox'],
+.treeview .editabletree-selection input[type='checkbox'],
+.treeview .editabletree-timedelta input[type='checkbox'],
+.treeview .editabletree-boolean input[type='checkbox'],
+.treeview .editabletree-many2one input[type='checkbox'],
+.treeview .editabletree-one2many input[type='checkbox'] {
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+.treeview td {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.treeview td.edited {
+  /* We have to define an overflow:visible in order for the
+            completion widget to be shown */
+  overflow: visible;
+  padding: 0 0;
+}
+.treeview td > .column-text {
+  white-space: pre;
+}
+.treeview .expander {
+  cursor: pointer;
+}
+.treeview .expander > img {
+  float: left;
+  margin-right: 5px;
+  width: 1em;
+}
+[dir="rtl"] .treeview .expander > img {
+  float: right;
+  margin-left: 5px;
+}
+.treeview label {
+  font-weight: normal;
+  display: inline;
+}
+.treeview label.required {
+  font-weight: bold;
+}
+.treeview label.editable {
+  font-style: italic;
+}
+.treeview .btn {
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: -5px;
+  margin-bottom: -5px;
+}
+.form {
+  width: 100%;
+}
+.form table.form-container > tbody > tr > td {
+  padding: 1px;
+}
+.form table.form-hcontainer > tbody > tr > td {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+.form table.form-vcontainer > tbody > tr > td {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.form td.form-label {
+  white-space: pre;
+}
+.form .form-char input,
+.form .form-password input,
+.form .form-integer input,
+.form .form-float input,
+.form .form-date input,
+.form .form-datetime input,
+.form .form-time input,
+.form .form-timedelta input,
+.form .form-selection input,
+.form .form-multiselection input,
+.form .form-url input,
+.form .form-email input,
+.form .form-callto input,
+.form .form-sip input,
+.form .form-pyson input,
+.form .form-char select,
+.form .form-password select,
+.form .form-integer select,
+.form .form-float select,
+.form .form-date select,
+.form .form-datetime select,
+.form .form-time select,
+.form .form-timedelta select,
+.form .form-selection select,
+.form .form-multiselection select,
+.form .form-url select,
+.form .form-email select,
+.form .form-callto select,
+.form .form-sip select,
+.form .form-pyson select {
+  min-width: 8em;
+}
+.form .form-many2one select,
+.form .form-one2one select,
+.form .form-reference select,
+.form form-binary select {
+  min-width: 8em;
+}
+.form .form-many2one input,
+.form .form-one2one input,
+.form .form-reference input,
+.form form-binary input {
+  min-width: 12em;
+}
+.form .form-integer input,
+.form .form-float input {
+  max-width: 8em;
+}
+.form .form-url a > img,
+.form .form-email a > img,
+.form .form-callto a > img,
+.form .form-sip a > img {
+  width: 1em;
+  height: 1em;
+}
+.form .form-many2one > .input-group {
+  width: 100%;
+}
+.form td.form-one2many,
+.form td.form-many2many {
+  vertical-align: top;
+}
+.form .form-one2many-menu::after,
+.form .form-many2many-menu::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.form .form-one2many-menu .form-one2many-string,
+.form .form-many2many-menu .form-one2many-string,
+.form .form-one2many-menu .form-many2many-string,
+.form .form-many2many-menu .form-many2many-string {
+  display: inline-table;
+  float: left;
+  margin: 5px;
+}
+[dir="rtl"] .form .form-one2many-menu .form-one2many-string,
+[dir="rtl"] .form .form-many2many-menu .form-one2many-string,
+[dir="rtl"] .form .form-one2many-menu .form-many2many-string,
+[dir="rtl"] .form .form-many2many-menu .form-many2many-string {
+  float: right;
+}
+.form .form-one2many-menu .form-one2many-toolbar,
+.form .form-many2many-menu .form-one2many-toolbar,
+.form .form-one2many-menu .form-many2many-toolbar,
+.form .form-many2many-menu .form-many2many-toolbar {
+  display: inline-table;
+  float: right;
+}
+[dir="rtl"] .form .form-one2many-menu .form-one2many-toolbar,
+[dir="rtl"] .form .form-many2many-menu .form-one2many-toolbar,
+[dir="rtl"] .form .form-one2many-menu .form-many2many-toolbar,
+[dir="rtl"] .form .form-many2many-menu .form-many2many-toolbar {
+  float: left;
+}
+.form .form-one2many-menu .form-one2many-toolbar .badge,
+.form .form-many2many-menu .form-one2many-toolbar .badge,
+.form .form-one2many-menu .form-many2many-toolbar .badge,
+.form .form-many2many-menu .form-many2many-toolbar .badge {
+  max-width: 5em;
+  min-width: 5em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.form .form-one2many-content .treeview,
+.form .form-many2many-content .treeview {
+  min-height: 100px;
+  max-height: 300px;
+}
+.form .form-richtext > .btn-toolbar {
+  min-width: 450px;
+}
+.form .form-richtext .richtext {
+  min-height: 5em;
+}
+.form .form-separator label {
+  margin-top: 10px;
+}
+.form .form-separator hr {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+.form .form-image_ img {
+  width: 4em;
+  height: 4em;
+}
+.form label {
+  font-weight: normal;
+  display: inline;
+}
+.form label.required {
+  font-weight: bold;
+}
+.form label.editable {
+  font-style: italic;
+}
+.form .nav-tabs {
+  margin-bottom: 15px;
+}
+.form .panel-heading {
+  padding: 1px 1px;
+}
+.form fieldset.form-group_ > legend {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+.form-binary,
+.editabletree-binary {
+  min-width: calc(12em);
+}
+.form-integer input,
+.form-float input,
+.form-timedelta input,
+.dict-integer input,
+.dict-float input,
+.dict-numeric input,
+.editabletree-integer input,
+.editabletree-float input,
+.editabletree-timedelta input {
+  text-align: right;
+  text-align: end;
+}
+.column-integer,
+.column-float,
+.column-timedelta {
+  text-align: right;
+  text-align: end;
+}
+.column-many2many,
+.column-one2many {
+  text-align: center;
+}
+input.column-boolean {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+.form-boolean input[type=checkbox],
+.editabletree-boolean input[type=checkbox] {
+  width: initial;
+}
+.dict-label {
+  text-align: right;
+  text-align: end;
+}
+.calendar {
+  width: 100%;
+  height: 100%;
+}
+.graph {
+  min-height: 400px;
+}
+.progress {
+  margin-bottom: 0px;
+}
+.window-form .window-form-toolbar {
+  text-align: right;
+  text-align: end;
+}
+.csv .modal-dialog .column-fields {
+  height: 35vh;
+  overflow-y: scroll;
+}
+@media screen and (max-width: 767px) {
+  .dict-label {
+    text-align: left;
+    text-align: start;
+  }
+}
+@media screen and (max-width: 767px) {
+  table.responsive,
+  table.responsive > thead,
+  table.responsive > thead > tr,
+  table.responsive > thead > tr > th:not(.invisible),
+  table.responsive > tbody,
+  table.responsive > tbody > tr,
+  table.responsive > tbody > tr > td:not(.invisible),
+  table.responsive > tfoot,
+  table.responsive > tfoot > tr,
+  table.responsive > tfoot > tr > td:not(.invisible) {
+    display: block !important;
+  }
+  table.responsive {
+    /* Hide table headers (but not display: none; for accessiblity) */
+  }
+  table.responsive > thead > tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  table.responsive > thead > tr,
+  table.responsive > tbody > tr > td {
+    text-align: left !important;
+    text-align: start !important;
+    /* Force height to empty content */
+  }
+  table.responsive > thead > tr > span:empty,
+  table.responsive > tbody > tr > td > span:empty {
+    min-height: 20px;
+    display: block;
+  }
+  table.responsive tfoot > tr > td:empty,
+  table.responsive tfoot > tr > td > label {
+    display: none !important;
+  }
+  table.responsive-noheader > tbody > tr > td {
+    width: 100% !important;
+  }
+  table.responsive-header > tbody > tr {
+    border: 1px solid #ccc;
+  }
+  table.responsive-header > tbody > tr > td,
+  table.responsive-header > tfoot > tr > td {
+    /* Behave like a "row" */
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+  }
+  table.responsive-header > tbody > tr > td:before,
+  table.responsive-header > tfoot > tr > td:before {
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    top: 6px;
+    left: 6px;
+    padding-right: 10px;
+    text-align: left;
+    text-align: start;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* Label */
+    content: attr(data-title);
+  }
+  [dir="rtl"] table.responsive-header > tbody > tr > td:before,
+  [dir="rtl"] table.responsive-header > tfoot > tr > td:before {
+    left: unset;
+    right: 6px;
+    padding-right: 0;
+    padding-left: 10px;
+  }
+  table.responsive-header > tbody > tr > td.required:before,
+  table.responsive-header > tfoot > tr > td.required:before {
+    font-weight: bold;
+  }
+  table.responsive-header > tbody > tr > td.editable:before,
+  table.responsive-header > tfoot > tr > td.editable:before {
+    font-style: italic;
+  }
+}
+#processing {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 2000;
+}
+.infobar {
+  position: fixed;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  min-width: 50%;
+}
+img.global-search-icon {
+  width: 2em;
+  height: 2em;
+}
+img.favorite-icon {
+  width: 1em;
+  height: 1em;
+}
